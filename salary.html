@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./salary.css">
+    <title>salary basic</title>
+  </head>
+  <body>
+    <div>
+      <label>product name</label>
+      <input type="text" id="eid" name="eid" value="" onkeyup="checkEid()"/>
+      <span id="sp1"></span>
+    </div>
+  <div>
+    <label>product Code</label>
+    <input type="text" id="eroll" name="eroll" value="" onkeyup="checkEroll()"/> 
+    <span id="sp3">###</span>
+  </div>
+  <div>
+    <label>MRP</label>
+    <input type="text" id="basic" name="basic" value="" onkeyup="calSalary()"/>
+  </div>
+  <div>
+    <label>Gst 12%</label>
+    <input type="text" id="hra" name="hra" value=""/>
+  </div>
+  <div>
+    <label>Discount 2%</label>
+    <input type="text" id="da" name="da" value=""/>
+  </div>
+  <div>
+    <label>Tax 5%</label>
+    <input type="text" id="pf" name="pf" value=""/>
+  </div>
+  <div>
+    <label>SSGS</label>
+    <input type="text" id="nsalary" name="nsalary" value=""/>
+  </div>
+  <div>
+    <label>Total</label>
+    <input type="text" id="gsalary" name="gsalary" value=""/>
+  </div>
+
+<div>
+  <table>
+    <thead>
+      <tr>
+       
+        <th>MRP</th>
+        <th>Gst</th>
+        <th>Discount</th>
+        <th>Tax</th>
+        <th></th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody id="tbodyid">
+    
+    </tbody>
+  </table>
+</div>
+
+<script src="./salary.js"></script>
+  </body>
+</html>

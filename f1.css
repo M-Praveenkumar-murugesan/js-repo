@@ -1,0 +1,19 @@
+body{
+    background-color: aqua;
+}
+.main{
+    margin-left:350px;
+}
+#btn_1{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+#btn_2{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+#rest{
+    width: 120px;
+}

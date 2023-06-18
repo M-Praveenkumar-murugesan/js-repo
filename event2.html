@@ -1,0 +1,392 @@
+<!-- task1.1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var inbox= prompt(" enter a color");
+        switch(inbox){
+            case "red":
+                alert("its a blood color");
+                break;
+                case "green":
+                    alert("its a natural color");
+        }
+    </script>
+</head>
+<body>
+   
+</body>
+</html> -->
+
+<!-- tsak-2 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var text=document.getElementById("name").value;
+            alert(text);
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter name</h2>
+    <input type="text" id="name" value=""/>
+    <input type="button" value="click"onclick="add()"/>
+</body>
+</html> -->
+
+<!-- task3
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var a=document.getElementById("name").value;
+            var b=document.getElementById("name1").value;
+            document.getElementById('name').value='';
+            document.getElementById('name1').value='';
+            if(a==b){
+                alert("equval data");
+            }
+            else{
+                alert("ivalid data");
+            }
+        }
+    </script>
+</head>
+<body>
+    <label>First Name</label>
+    <input type="text" id="name" value=""/>
+    <label>Confirm Name</label>
+    <input type="text" id="name1" value=""/>
+    <input type="button" value="click"onclick="add()"/>
+</body>
+</html> -->
+
+<!-- task-4 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+             function add(){
+            var a=document.getElementById("name").value;
+            var b=document.getElementById("name1").value;
+            if(a=="text" || b==""){
+                alert("please enter data");
+            }
+            else if(a=="" || b=="text"){
+                alert("please enter data");
+            }
+        }
+    </script>
+</head>
+<body>
+    <label>First Name</label>
+    <input type="text" id="name" value=""/>
+    <label>Confirm Name</label>
+    <input type="text" id="name1" value=""/>
+    <input type="button" value="click"onclick="add()"/>
+</body>
+</html> -->
+
+<!-- task-5 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var a=parseInt(document.getElementById("text").value);
+            var b=parseInt(document.getElementById("text1").value);
+            document.getElementById("sp1").innerHTML="addtion :"+ (a + b);
+        }
+        function sub(){
+            var a=parseInt(document.getElementById("text").value);
+            var b=parseInt(document.getElementById("text1").value);
+            document.getElementById("sp1").innerHTML="subraction :"+ (a - b);
+        }
+        function mul(){
+            var a=parseInt(document.getElementById("text").value);
+            var b=parseInt(document.getElementById("text1").value);
+            document.getElementById("sp1").innerHTML="subraction :"+ (a * b);
+        }
+        function Division(){
+            var a=parseInt(document.getElementById("text").value);
+            var b=parseInt(document.getElementById("text1").value);
+            document.getElementById("sp1").innerHTML="subraction :"+ (a / b);
+        }
+    </script>
+</head>
+<body>
+    <label for="">enter a number</label>
+    <input type="text" id="text" name="plus" value=""/>
+    <label for="">enter a number</label>
+    <input type="text" id="text1" name="plus" value=""/><br>
+    <input type="button" value="addtion" onclick="add()">
+    <input type="button" value="sub" onclick="sub()">
+    <input type="button" value="mul" onclick="mul()">
+    <input type="button" value="Division" onclick="Division()"><br>
+    <p id="sp1"></p>
+</body>
+</html> -->
+
+<!-- task-6 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function check()
+{
+    var num=parseInt(document.getElementById('text').value);
+    var opt='<option>select</option>';
+    for(let i=0;i<num;i++)
+    {
+        opt += '<option>'+i+'</option>';
+    }
+    document.getElementById('add').innerHTML=opt;
+}
+    </script>
+</head>
+<body>
+    <label>Enter a value</label>
+    <input type="text" id="text" name="text"value=""/>
+    <input type="button" value="click" onclick="check()"/>
+    <select id="add">
+
+    </select>
+</body>
+</html> -->
+
+<!-- task-7 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function check()
+{
+    var num=parseInt(document.getElementById('text').value);
+    var opt='<option>select</option>';
+    for(let i=0;i<num;i++)
+    {
+        opt += '<option>'+i+'</option>';
+    }
+    document.getElementById('add').innerHTML=opt;
+}
+    </script>
+</head>
+<body>
+    <label>Enter a value</label>
+    <input type="text" id="text" name="text"value="" onkeyup="check()"/>
+    <select id="add">
+
+    </select>
+</body>
+</html> -->
+
+
+<!-- task-8 -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function check()
+{
+    var num=parseInt(document.getElementById('text').value);
+    var opt='<option>select</option>';
+    for(let i=0;i<num;i++)
+    {
+        opt += '<option>'+i+'</option>';
+    }
+    document.getElementById('add').innerHTML=opt;
+}
+function final()
+{
+    var num=parseInt(document.getElementById('add').value);
+    var opt='<option>select</option>';
+    for(let j=0;j<num;j++)
+    {
+        opt += '<option>'+j+'</option>';
+    }
+    document.getElementById('row').innerHTML=opt;
+}
+    </script>
+</head>
+<body>
+    <label>Enter a value</label>
+    <input type="text" id="text" name="text"value=""/>
+    <input type="button" value="click" onclick="check()"/>
+    
+    <select id="add">
+
+    </select>
+    <select id="row" onclick="final()">
+
+    </select>
+    <table>
+        <thead>
+
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html> -->
+
+<!-- task-9 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function check()
+{
+    var num=parseInt(document.getElementById('text').value);
+    var opt='<option value="">select</option>';
+    for(let i=0;i<num;i++)
+    {
+        opt += '<option value="'+i+'">'+i+'</option>';
+    }
+    document.getElementById('add').innerHTML=opt;
+}
+function final()
+{
+    var b=parseInt(document.getElementById('add').value);
+    var tab="";
+    for(let j=0;j<b;j++)
+    {
+        tab += '<tr><td>'+j+'</td><td><input type="text"</td><td><input type="text"</td></tr>'; ;
+    }
+    document.getElementById('row').innerHTML=tab;
+}
+    </script>
+</head>
+<body>
+    <label>Enter a value</label>
+    <input type="text" id="text" name="text"value=""/>
+    <input type="button" value="click" onclick="check()"/>
+    
+    <select onchange="final()"id="add">
+
+    </select>
+    <table>
+        <thead id="row">
+            <tr>
+             <th>s.no</th>
+             <th>name</th>
+             <th>password</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>  -->    
+
+
+<!-- task-10 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function use(){
+    var n = document.getElementById("name").value;
+    var date = document.getElementById("dob").value;
+    var first = n.slice(0,6);
+    var d = new Date(date);
+    var last = d.getDate();
+    var comb = first + last;
+    document.getElementById("pass").value = comb;
+}
+    </script>
+</head>
+<body>
+    <form>
+        <label for="name">Enter Your Name</label>
+        <input type="text" name="" id="name"><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="" id="dob"><br>
+        <label for="password">Password</label>
+        <input type="text" name="" id="pass">
+        <input type="button" value="Submit" onclick="use()">
+    </form>
+</body>
+</html> -->
+
+
+<!-- task-11 -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function final(){
+    var date = document.getElementById("date").value;
+    var d = new Date(date);
+    d.setDate(d.getDate()+5);
+    var year  = d.getFullYear().toString();
+    var month  = (d.getMonth()+1).toString();
+    var dat  = d.getDate().toString();
+    var aft = dat + "-" + month + "-" + year;
+    document.getElementById("after").value = aft;
+    var d1 = new Date(date)
+    d1.setDate(d1.getDate()-5);
+    var dat1 = d1.getDate().toString();
+    var bef = dat1 + "-" + month + "-" + year;
+    document.getElementById("before").value = bef;
+}
+    </script>
+</head>
+<body>
+    <label>Select Date</label>
+    <input type="date" name="" id="date"><br><br>
+    <label>After 5 days</label>
+    <input type="text" name="" id="after"><br><br>
+    <label>Before 5 days</label>
+    <input type="text" name="" id="before"><br><br>
+    <input type="button" value="Check" onclick="final()">
+</body>
+</html> -->
+
+
+
+
