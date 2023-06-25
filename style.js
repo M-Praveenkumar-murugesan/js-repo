@@ -504,5 +504,20 @@
 // findGrade("pk ",43)
 // findGrade("pk ",25)
 // findGrade("pk ",103)
-var item_list=[ 'Orange', 25, 100, 'true', 33.58];
-console.log(item_list);
+// var item_list=[ 'Orange', 25, 100, 'true', 33.58];
+// console.log(item_list);
+let n=5;
+let str='';
+for(let r=1;r<n;r++)
+{
+    for(let c=1;c<r;c++)
+    {
+        str+="";
+    }
+    for(let k=0;k<2*(n-r)-1;k++)
+    {
+        str +="*";
+    }
+    str +='\n';
+}
+console.log(str);
