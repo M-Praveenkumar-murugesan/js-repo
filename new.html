@@ -86,6 +86,34 @@
 
 
 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function newday(separator) {
+  var today = new Date();
+  var day = today.getDate();
+  var month = today.getMonth();
+  var year = today.getFullYear();
+
+  Format day and month with leading zeros if necessary
+  day = (day < 10) ? '0' + day : day;
+  month = (month < 10) ? '0' + month : month;
+
+  return day + separator + month + separator + year;
+}
+console.log(newday('-'));
+console.log(newday('*'));
+</script>
+</body>
+</html> -->
+
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,6 +122,40 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        function getDaysInMonth(month, year) {
+  JavaScript months are 0-based (January is 0, February is 1, etc.)
+  var date = new Date(year, month, 1);
+  var nextMonth = new Date(year, month + 1, 1);
+  var numDays = (nextMonth - date) / (1000 * 60 * 60 * 24);
+  
+  return numDays;
+}
+console.log(getDaysInMonth(2, 2012));
+console.log(getDaysInMonth(1, 2012));
+console.log(getDaysInMonth(3, 2012));
+console.log(getDaysInMonth(12, 2012));
+
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function month_name(date) {
+  const options = { month: 'long' };
+  return date.toLocaleString('en-US', options);
+}
+console.log(month_name(new Date("10/11/2009")));
+console.log(month_name(new Date("11/13/2014")));
+
+    </script>
 </body>
 </html>

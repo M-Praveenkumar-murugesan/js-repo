@@ -521,3 +521,4 @@ for(let r=1;r<n;r++)
     str +='\n';
 }
 console.log(str);
+
